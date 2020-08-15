@@ -11,16 +11,10 @@
 
 </head>
 <body ng-app="myapp">
-    <script>
-        var myapp = angular.module('myapp'[])
-        myapp.controller = ('myctrl', ['$scope', function ($scope) {
-            $scope.value;
-        }]);
-    </script>
-
+   
                 <div class="slidercontainer" ng-controller="myctrl">
                     <input type="range" ng-model="value" orient="vertical" class="slider" step="10" min=0 max=100 />
-            <p> Value:{{value}}</p>
+            
                 </div>
             </body>
 </html >
