@@ -1,54 +1,14 @@
 body {
     background: #2a3b81;
     padding: 0px;
+    margin-top: 200px;
     justify-content: center;
     display: flex;
-    margin-top: 200px;
-}
-
-input[type='range'][orient=vertical] {
-    writing-mode: vertical-lr;
-    -webkit-appearance: none;
-
-    -webkit-appearance: slider-vertical;
-    width: 50px;
-    height: 50px;
-    padding: 0px 0px;
-    -webkit-transform: rotate(-90deg)
-}
-input[type='range']::-webkit-slider-runnable-track {
-       border-radius:50px;
-    -webkit-appearance: none;
-   animation:0.2s;
-    background: #2a3b81;
-}
-
-/*input[type=range]::-moz-range-progress {
-    background-color: #ff6a00;
-    width:59px;
-    height: 1em;
-    border-radius: 50px;
-    
-}*/
-
-
-    
-
-
-input[type='range']::-ms-track {
-        border: black;
-        border-width: 16px 0px;
-    }
-
-#slidercontainer{
-    width:300px;
-    margin-top:50px;
-    border-width:thin;
 }
 
 #slider {
-    -webkit-appearance: none;
-    width: 100%;
+    -webkit-appearance:none;
+    width: 150%;
     outline: none;
     height: 50px;
     background: #2a3b81;
@@ -59,25 +19,43 @@ input[type='range']::-ms-track {
     border: 20px solid #6974ef;
 }
 
-.slider:hover{
-    opacity:1;
-}
-
-#slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    border: 0;
-    background: url('pw.svg');
-    cursor: pointer;
-    -webkit-transform: rotate(90deg);
-}
-/*.slider::-moz-range-thumb {
+    #slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 50px;
         height: 50px;
-        width:50px;
         border-radius: 50px;
         border: 0;
         background: url('pw.svg');
         cursor: pointer;
-    }*/
+        -webkit-transform: rotate(90deg);
+        box-shadow: -4px -3px 2px #6974ef;
+    }
+
+input[type=range] {
+        -webkit-appearance: none;
+        -webkit-transform: rotate(-90deg);
+       
+}
+
+
+#slider:focus::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #ff6a00;
+    
+}
+
+#slider::-webkit-slider-runnable-track {
+    border-radius: 50px;
+    -webkit-appearance: none;
+    background: #2a3b81;
+    overflow: hidden;
+    animation: 0.2s;
+}
+
+#slider::-ms-fill-lower {
+    background-color: #ff6a00;
+}
+#slider::-ms-fill-upper {
+    background-color: #2a3b81;
+}
+
