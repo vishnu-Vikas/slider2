@@ -14,3 +14,4 @@ document.addEventListener('listen', function (y) {
     slider.style.background = color;
 
 })
+
