@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="sst.css" />
+    <script >
+        var app = angular.module('range', []);
+        app.controller('myctrl', ['$scope', function ($scope) {
+
+                $scope.max = 100;
+                $scope.min = 0;
+                $scope.value = 0;
+
+
+            }]);
+    </script>
+    <title></title>
+
+</head>
+<body ng-app="range">
+    
+        <div id="Container" ng-controller="myctrl">
+            <input type="range" ng-model="value" orient="vertical" id="Slider" value="0" min="0" max="100" step="10" />
+            
+        </div>
+</body >
+</html >
