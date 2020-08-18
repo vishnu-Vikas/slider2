@@ -7,19 +7,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
 
     <link rel="stylesheet" href="Style.css" />
-    <script src="Script.js">
-       
-
-    </script>
+    <script src="Script.js" ></script>
+      
 </head>
 
 <body ng-app="range">
     
     <div   ng-controller="myctrl">
-        <input type="range" name="range"  ng-model="value" id="slider" min="{{min}}" max="{{max}}" step="10" ng-click="listen" />
+        <input type="range" name="range"  ng-model="value" id="slider" min="{{min}}" max="{{max}}" step="10" value="0"/>
        
         
     </div>
 </body>
 </html>
-
