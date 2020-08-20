@@ -1,14 +1,13 @@
 body {
-      display: flex;
+    display: flex;
     justify-content: center;
     margin-top: 200px;
-    background: #2a3b81;
+     background: #2a3b81;
     overflow: hidden;
 }
 
 
 #Slider {
-    
     display: flex;
     justify-content: center;
     -webkit-appearance: none;
@@ -20,7 +19,6 @@ body {
     -webkit-transition: .2s;
     transition: opacity .2s;
     transform: rotate(-90deg);
-    
     /* box-shadow: -5px -5px 10px 5px #213a9d, 5px 5px 10px 5px black;
       box-shadow: -2px -2px 10px 2px black, 2px 2px 10px 2px #213a9d;*/
     border: 20px solid #6974ef;
@@ -28,15 +26,16 @@ body {
 }
 
 input[type='range'] {
-  /*  transform: rotate(-90deg);*/
-    background-color: #2a3b81;
-    
+    /*  transform: rotate(-90deg);
+    background-color: #2a3b81;*/
+    box-shadow: -10px -10px 4px #767ee0, 10px 10px 10px #272a45;
     -webkit-appearance: none;
 }
 
 
 
 #Slider::-webkit-slider-thumb {
+    overflow: hidden;
     -webkit-appearance: none;
     opacity: 1;
     width: 50px;
@@ -44,17 +43,25 @@ input[type='range'] {
     border-radius: 50px;
     background: url('pw.svg');
     transform: rotate(90deg);
-    box-shadow: -5px -5px 10px 5px #5284eb, 5px 5px 10px 5px black;
-    
-   
+    /* box-shadow: -5px -5px 10px 5px #767ee0, 5px 5px 10px 5px black;
+       box-shadow: 0px 186px 0px 168px #ff6a00;*/
     cursor: pointer;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
 }
 #Slider:focus::-webkit-slider-thumb:hover {
-    opacity: 1;
+    width:40px;
+    height:40px;
+    border-radius:40px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
     background-color: #ff6a00;
-    box-shadow: -5px -5px 8px 5px #0e1c45,0px 186px 0px 168px #ff6a00;
-    /* box-shadow: 0px 186px 0px 168px #ff6a00;*/
+    /*  box-shadow: -5px -5px 8px 5px #0e1c45,0px 186px 0px 168px #ff6a00;
+    box-shadow: 0px 186px 0px 168px #ff6a00;*/
+    box-shadow:-5px -5px 5px #272a45;
 }
+
+
 #Slider:focus::-webkit-slider-runnable-track {
     /* box-shadow: -1px 1px 5px 1px black, 1px 1px 5px 1px black;*/
     overflow: hidden;
@@ -62,7 +69,8 @@ input[type='range'] {
     -webkit-appearance: none;
     border-radius: 55px;
     background: #2a3b81;
-  
+    box-shadow: inset -10px -10px 5px #6d76de, inset 10px 10px 5px #272a45;
+      
 }
 /*#Slider:focus::-ms-fill-lower {
     background-color: #ff6a00;
@@ -74,12 +82,12 @@ input[type='range'] {
 
 
 
-div {
+/*div {
     background: #6974ef;
     margin-left: 120px;
 }
 
-/*#container {
+#container {
 
     margin-top:-230px;
     height:400px;
@@ -87,8 +95,7 @@ div {
     display:flex;
     border-radius:50px;
 
-}
-
-#Slider:focus{
-      box-shadow: -3px -3px 10px 3px black, 5px 5px 10px 5px #5284eb;
 }*/
+
+
+
