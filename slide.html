@@ -16,13 +16,18 @@
             }]);
     </script>
     <title></title>
+    <script type="text/javascript">
+        function fun() {
+            document.getElementById("Slider");
+        }
+    </script>
 
 </head>
 <body ng-app="range">
 
 
 
-    <input type="range" ng-controller="myctrl" ng-model="value" orient="vertical" id="Slider" value="0" min="0" max="100" step="10" />
+    <input type="range" ng-controller="myctrl" ng-model="value" orient="vertical" id="Slider" value="0" min="0" max="100" step="10" onclick="fun()"/>
 
     <div id="container"></div>
 
