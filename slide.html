@@ -4,32 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="sst.css" />
-    <script >
-        var app = angular.module('range', []);
-        app.controller('myctrl', ['$scope', function ($scope) {
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+    <script src="ss.js">
 
-                $scope.max = 100;
-                $scope.min = 0;
-                $scope.value = 0;
-
-
-            }]);
     </script>
+  
     <title></title>
-    <script type="text/javascript">
-        function fun() {
-            document.getElementById("Slider");
-        }
-    </script>
+
 
 </head>
-<body ng-app="range">
+<body ng-app="range" ng-controller="myctrl"> 
 
+    
 
+        <input type="range" ng-model="value" orient="vertical" id="Slider"  min="0" max="100" step="10" value="0" />
+    <p ng-model="value">{{value}}</p>
 
-    <input type="range" ng-controller="myctrl" ng-model="value" orient="vertical" id="Slider" value="0" min="0" max="100" step="10" onclick="fun()"/>
-
-    <div id="container"></div>
+        <div id="container"> </div>
 
 </body>
 </html >
